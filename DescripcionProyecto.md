@@ -11,10 +11,10 @@ El proyecto se basa en probar la conjetura de Goldbach para un número finito de
 Ejemplo de esto es:
 
 
--4 = 2 + 2
--6 = 3 + 3 = 2 + 2 + 2
--7 = 2 + 2 + 3
--8 = 3 + 5 = 3 + 3 + 2
--9 = 3 + 3 + 3 = 5 + 2 + 2
--10 = 3 + 7 = 5 + 5 = 3 + 5 + 2 
+	- 4 = 2 + 2
+	- 6 = 3 + 3 = 2 + 2 + 2
+	- 7 = 2 + 2 + 3
+	- 8 = 3 + 5 = 3 + 3 + 2
+	- 9 = 3 + 3 + 3 = 5 + 2 + 2
+	- 10 = 3 + 7 = 5 + 5 = 3 + 5 + 2 
 
