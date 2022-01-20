@@ -6,7 +6,7 @@
 
 """
 import time
-import pandas as pd
+
 
 def primes_upto(x: int):
     primos = []
@@ -22,7 +22,7 @@ def primes_upto(x: int):
     return primos
 
 
-n = 100
+n = int(input("Ingresa un número entero "))
 
 combinaciones2 = [[],[]]
 combinaciones3 = [[],[]]
@@ -31,21 +31,21 @@ primos = primes_upto(n)
 
     
 if n%2 == 0:
+    print("Combinación de dos primos:")
     combi2 = 0
     combinaciones2[0].append(n)
+    completa = [] 
     for j in primos:
         for k in primos:
-            if j + k == n:
+            if j + k == n and j*k not in completa:
                 combi2 = combi2 + 1
-                
-    if combi2 % 2 != 0:
-        combi2 = combi2//2 + 1
-        combinaciones2[1].append(combi2)
-    else:
-        combi2 = combi2/2
-        combinaciones2[1].append(combi2)
+                completa.append(j*k)
+                print(j, " + ", k, " = ", n)
+
+    combinaciones2[1].append(combi2)
 
 if n > 5:
+    print("Combinación de tres primos:")
     combi3 = 0
     combinaciones3[0].append(n)
     completa = []
@@ -55,19 +55,14 @@ if n > 5:
                 if (x + y + z == n) and x*y*z not in completa:
                     combi3 = combi3 + 1
                     completa.append(x*y*z)
+                    print(x, " + ", y, " + ", z, " = ", n)
     
     combinaciones3[1].append(combi3)
+   
     
-
-df2 = pd.DataFrame(combinaciones2).T
-df3 = pd.DataFrame(combinaciones3).T
-
-df2.to_csv('Cambinaciones2.csv')
-df3.to_csv('Cambinaciones3.csv') 
-    
-
-        
-print(combinaciones2, combinaciones3)
+print()
+print("Combinaciones para ", n)
+print("Suma de dos primos: ", combinaciones2[1], ", Suma de tres primos: ", combinaciones3[1])
 
 
 
