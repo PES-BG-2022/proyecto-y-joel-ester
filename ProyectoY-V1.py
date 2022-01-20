@@ -2,12 +2,16 @@
 # -*- coding: utf-8 -*-
 """
 
-@author: ester, joel
+Autores: Ester Quiñonez, Joel Juárez
+Implementación conjetura de Goldbach
+Maestría en economía y finanzas
+Proyecto final
+Programación 1
 
 """
 import time
 
-
+#Función que regresa los numeros primos hasta un número dado
 def primes_upto(x: int):
     primos = []
     for j in range(x+1):
@@ -29,7 +33,7 @@ combinaciones3 = [[],[]]
 
 primos = primes_upto(n)
 
-    
+ #Combinaciones de dos primos   
 if n%2 == 0:
     print("Combinación de dos primos:")
     combi2 = 0
@@ -44,6 +48,7 @@ if n%2 == 0:
 
     combinaciones2[1].append(combi2)
 
+#Combinaciones de tres primos
 if n > 5:
     print("Combinación de tres primos:")
     combi3 = 0
