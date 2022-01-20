@@ -1,4 +1,4 @@
-#Conjetura de Goldbach
+# Conjetura de Goldbach
 
 El proyecto se basa en probar la conjetura de Goldbach para un número finito de números naturales y representarlos de manera gráfica. La conjetura de Goldbach nos dice:
 
