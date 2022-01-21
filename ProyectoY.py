@@ -3,7 +3,7 @@
 """
 Created on Wed Jan 19 20:14:28 2022
 
-@author: ester
+Autores: Ester Quiñonez y Joel Juárez
 """
 
 #Todo número par mayor que 2 puede escribirse como suma de dos números primos. 
