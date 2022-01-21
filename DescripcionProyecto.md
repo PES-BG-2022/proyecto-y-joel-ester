@@ -18,3 +18,6 @@ Ejemplo de esto es:
 	- 9 = 3 + 3 + 3 = 5 + 2 + 2
 	- 10 = 3 + 7 = 5 + 5 = 3 + 5 + 2 
 
+<p align="center">
+
+	Programas: "ProyectoY" y "ProyectoY-V1". Gráficas: "dos-combinaciones" y "tres combinaciones". Datos: "combinaciones_g2" y "Combinaciones3". 
